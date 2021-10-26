@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group
+    android:id="@+id/top_menu"
+    android:checkableBehavior="single">
+    <item
+        android:id="@+id/first"
+        android:icon="@drawable/ic_smartphone"
+
+        android:title="+91 0000000000" />
+    <item
+        android:id="@+id/second"
+        android:icon="@drawable/ic_location"
+        android:title="Kaas 69 sir chanderi athena greece" />
+    <item
+        android:id="@+id/third"
+        android:icon="@drawable/ic_location"
+        android:title="My Addresses" />
+    <item
+        android:id="@+id/fourth"
+        android:icon="@drawable/ic_note"
+        android:title="My Orders" />
+    <item
+        android:id="@+id/fifth"
+        android:icon="@drawable/ic_cart"
+        android:title="My Cart" />
+    <item
+        android:id="@+id/sixth"
+        android:icon="@drawable/ic_wallet"
+        android:title="My Wallet" />
+    <item
+        android:id="@+id/seventh"
+        android:icon="@drawable/ic_bell"
+        android:title="My Notification" />
+    <item
+        android:id="@+id/eigth"
+        android:icon="@drawable/ic_discount"
+        android:title="Offer Zone" />
+    <item
+        android:id="@+id/ninth"
+        android:icon="@drawable/ic_friends"
+        android:title="Refer Your Friends" />
+</group>
+    <group
+        android:id="@+id/second_menu"
+        android:checkableBehavior="none">
+            <item
+                android:id="@+id/one"
+                android:icon="@drawable/ic_customer_service"
+                android:title="Customer Support" />
+            <item
+                android:id="@+id/two"
+                android:icon="@drawable/ic_rating"
+                android:title="Rate Us" />
+            <item
+                android:id="@+id/three"
+                android:icon="@drawable/ic_share"
+                android:title="Share" />
+            <item
+               android:id="@+id/four"
+                android:icon="@drawable/ic_group"
+                android:title="About us" />
+            <item
+                android:id="@+id/fife"
+                android:icon="@drawable/ic_logout"
+                android:title="Logout"/>
+    </group>
+        </menu>
+
+

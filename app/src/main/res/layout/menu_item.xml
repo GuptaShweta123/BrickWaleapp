@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:background="@color/bluish"
+    android:id="@+id/top_layout">
+
+    <ImageView
+        android:id="@+id/phoneImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_smartphone"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/phoneText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+91 0000000000"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/phoneImage"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/addressImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_location"
+       app:layout_constraintTop_toBottomOf="@id/top_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/addressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Addresses"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/addressImage"
+        android:layout_marginLeft="20dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+       app:layout_constraintTop_toBottomOf="@id/top_layout"
+        />
+    <ImageView
+        android:id="@+id/orderImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_note"
+       app:layout_constraintTop_toBottomOf="@id/addressImage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/orderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Orders"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toEndOf="@id/orderImage"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:textSize="12sp"
+      app:layout_constraintTop_toBottomOf="@id/addressImage"
+        />
+    <ImageView
+        android:id="@+id/cartImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_cart"
+      app:layout_constraintTop_toBottomOf="@id/orderImage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/cartText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Cart"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toEndOf="@id/cartImage"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"
+       app:layout_constraintTop_toBottomOf="@id/orderImage"
+        />
+    <ImageView
+        android:id="@+id/walletImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_wallet"
+       app:layout_constraintTop_toBottomOf="@id/cartImage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/walletText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Wallet"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/walletImage"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/cartImage"
+        />
+    <ImageView
+        android:id="@+id/notificationImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_bell"
+       app:layout_constraintTop_toBottomOf="@id/walletImage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/notificationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Notification"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toEndOf="@id/notificationImage"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/walletImage"
+        />
+    <ImageView
+        android:id="@+id/offerImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_discount"
+        app:layout_constraintTop_toBottomOf="@id/notificationImage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/offerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Offer Zone"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toEndOf="@id/offerImage"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/notificationImage"
+        />
+    <ImageView
+        android:id="@+id/referImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_friends"
+        app:layout_constraintTop_toBottomOf="@id/offerImage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/referText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refer Your Friends"
+        android:layout_marginTop="20dp"
+
+        android:textStyle="bold"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintStart_toEndOf="@id/referImage"
+        android:layout_marginLeft="25dp"
+        android:textSize="15sp"
+       app:layout_constraintTop_toBottomOf="@id/offerImage"
+        />
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+       android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/referImage"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <ImageView
+        android:id="@+id/customerImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_customer_service"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/customerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer Support"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintStart_toEndOf="@id/customerImage"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"
+       app:layout_constraintTop_toBottomOf="@id/view"
+        />
+    <ImageView
+        android:id="@+id/rateImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_rating"
+        app:layout_constraintTop_toBottomOf="@id/customerImage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/rateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate Us"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintStart_toEndOf="@id/rateImage"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/customerImage"
+        />
+    <ImageView
+        android:id="@+id/shareImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_share"
+        app:layout_constraintTop_toBottomOf="@id/rateImage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/shareText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintStart_toEndOf="@id/shareImage"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/rateImage"
+        />
+    <ImageView
+        android:id="@+id/aboutImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_group"
+        app:layout_constraintTop_toBottomOf="@id/shareImage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/aboutText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About US"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintStart_toEndOf="@id/aboutImage"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/shareImage"
+        />
+    <ImageView
+        android:id="@+id/logoutImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_logout"
+        app:layout_constraintTop_toBottomOf="@id/aboutImage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/logoutText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintStart_toEndOf="@id/logoutImage"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/aboutImage"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
